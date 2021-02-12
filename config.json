@@ -1,0 +1,13 @@
+{
+    "token": "TOKEN TIL DISCORD BOT",
+    "prefix": "PREFIX se den her for guide https://www.youtube.com/watch?v=NvNsLgUy0nE",
+    "port": "30120",
+    "ip": "IP TIL SERVERN",
+    "suproleid": "Rolle-ID",
+    "supportid": "Kanal-id",
+    "ledelseroleid" : "Ledelse rolle id",
+    "ledelsesupportid": "Ledelse Kanal-id"
+
+
+    
+}
