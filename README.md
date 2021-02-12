@@ -23,8 +23,6 @@ npm i
     "ledelseroleid" : "Ledelse rolle id",
     "ledelsesupportid": "Ledelse Kanal-id"
 
-
-    
 }
 ```
 
