@@ -12,7 +12,7 @@ ${config.prefix}**Support**
 ${config.prefix}**Ledelse**
   `
 
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
     .addField(help, `Lavet af ♥Gad♥#7870`)
     .setColor("#fffff")
     .setTimestamp()

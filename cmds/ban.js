@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
         if(bUser.hasPermission("ADMINISTRATOR")) return message.channel.send("Denne person kan ikke blive banned!");
         
 
-        let BanMessageEmbed = new Discord.RichEmbed()
+        let BanMessageEmbed = new Discord.MessageEmbed()
         .setDescription(`Bannede fra: **${message.guild.name}** af ${message.author}`)
         .setColor("#e56b00")
         .addField("Grund: ", bReason);
@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) => {
         
         
 
-        let banEmbed = new Discord.RichEmbed()
+        let banEmbed = new Discord.MessageEmbed()
         .setDescription("bannede")
         .setColor("#e56b00")
         .addField("Bannede Bruger:", `${bUser} Med ID ${bUser.id}`)

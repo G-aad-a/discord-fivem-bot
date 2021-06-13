@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "discord-fivem-api": "^1.0.1",
-    "discord.js": "^11.6.4",
+    "discord.js": "^12.5.3",
     "fivem": "^2.1.5",
     "fivereborn-query": "^1.0.4",
     "gamedig": "^2.0.23"

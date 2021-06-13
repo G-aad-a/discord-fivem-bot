@@ -1,11 +1,11 @@
 const fivem = require("discord-fivem-api");
-const { RichEmbed } = require('discord.js')
+const { MessageEmbed } = require('discord.js')
 module.exports.run = async (client, message, args, config) => {
     let role = `<@&${config.ledelseroleid}>`
     
     //dont judge me, magter ikke at import functions
     function joeembed(args) {
-        let embed = new Discord.RichEmbed()
+        let embed = new Discord.MessageEmbed()
           .setDescription(args)
           .setColor("#fffff")
         message.channel.send({ embed: embed })
@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args, config) => {
     if (message.channel.id !== config.ledelsesupportid) {
         joeembed(`Kan kun sendes i <#${config.supportid}>`)
     } else {
-        let embed = new RichEmbed()
+        let embed = new MessageEmbed()
         .addField(`Du har nu kontaktede Ledelse og de vil være der hurtigst mulig`, `Og Rolig nu de kommer omlidt...`)
         .setColor("#fffff")
         .setAuthor(message.author.username, message.author.displayURL)

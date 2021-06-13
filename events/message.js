@@ -15,7 +15,7 @@ if (!message.content.startsWith(config.prefix)) return;
   set.add(message.author.id)
 
     function joeembed(args) {
-        let embed = new Discord.RichEmbed()
+        let embed = new Discord.MessageEmbed()
           .setDescription(args)
           .setColor("#fffff")
         message.channel.send({ embed: embed })

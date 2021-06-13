@@ -1,5 +1,5 @@
 const dig = require("gamedig");
-const { RichEmbed } = require('discord.js')
+const { MessageEmbed } = require('discord.js')
 module.exports.run = async (client, message, args, config) => {
 
     
@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args, config) => {
             socketTimeout: 5000,
             udpTimeout: 10000
         }).then((info) => {
-            const embed = new RichEmbed()
+            const embed = new MessageEmbed()
                 .setAuthor(info.raw.name)
                 .setColor("RANDOM")
                 .addField(`Password beskyttet?`, info.password, true)
