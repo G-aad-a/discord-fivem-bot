@@ -10,19 +10,10 @@ module.exports = (client, message, args) => {
             port: config.port
         }).then((info) => {
             
-            client.user.setPresence({
-                game:{
-                  name: `${info.raw.clients}/${info.raw.sv_maxclients} I Byen`
-                },
-                status:'online'
-              });
+          client.user.setActivity(`${info.raw.clients}/${info.raw.sv_maxclients} I Byen`, { type: 'WATCHING' });
+        
         }).catch((error) => {
-            client.user.setPresence({
-                game:{
-                  name: `Ingen I Byen`
-                },
-                status:'online'
-              })
+          client.user.setActivity(`Ingen I Byen`, { type: 'WATCHING' });
             })
     }, 2000)
 

@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args, config) => {
     
     //dont judge me, magter ikke at import functions
     function joeembed(args) {
-        let embed = new Discord.MessageEmbed()
+        let embed = new MessageEmbed()
           .setDescription(args)
           .setColor("#fffff")
         message.channel.send({ embed: embed })

@@ -1,4 +1,5 @@
 
+
 const config = require('../config.json')
 const Discord = require("discord.js");
 
@@ -13,7 +14,7 @@ ${config.prefix}**Ledelse**
   `
 
     let embed = new Discord.MessageEmbed()
-    .addField(help, `Lavet af ♥Gad♥#7870`)
+    .addField(help, `Lavet af Gaada#4500`)
     .setColor("#fffff")
     .setTimestamp()
     .setThumbnail(message.author.displayAvatarURL)
